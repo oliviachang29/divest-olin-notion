@@ -7,4 +7,25 @@
 name = "site"
 
 # This page should be the root of your website. It's important.
-page = "<your Notion share URL here>"
+page = "https://meowing-fin-c5e.notion.site/Divest-Olin-Divest-Olin-9766e34b07d3444ea87100ff2bd3de3a"
+
+## Global Site Settings ##
+# this [site] table defines override settings for the whole site
+# later on we will see how to define settings for a single page
+[site]
+  ## Custom Fonts ##
+  # you can specify the name of a google font to use on the site - use the font embed name
+  # if in doubt select a style on fonts.google.com and navigate to the "embed" tag to
+  # check the name under CSS rules
+  # the following table keys controls the font of specific elements:
+  #   site: changes the font for the whole page (apart from code blocks)
+  #         but the settings below override it
+  #   navbar: site breadcrumbs on the top-left of the page
+  #   title: page title (under the icon)
+  #   h1: heading blocks, and inline databases' titles
+  #   h2: sub-heading blocks
+  #   h3: sub-sub-heading blocks
+  #   body: non-heading text on the page
+  #   code: text inside code blocks
+  [site.fonts]
+  site = 'DM Sans'
