@@ -30,12 +30,5 @@ jobs:
           -v "$GITHUB_WORKSPACE/pages_repo/site.toml:/app/loconotion/site.toml" \
           loconotion "site.toml"
         working-directory: loconotion
-      - name: What's the deal?
-        run: |
-          find "$GITHUB_WORKSPACE"
       - name: List files in the repository
-        run: ls -R ${GITHUB_WORKSPACE}/../../
-
-          GIT_DEPLOY_BRANCH=gh-pages \
-          GIT_DEPLOY_REPO="https://${{ github.token }}@github.com/${{ github.repository }}.git" ./deploy.sh
-        working-directory: pages_repo
+        run: ls ${GITHUB_WORKSPACE}/dist/output
