@@ -31,4 +31,4 @@ jobs:
           loconotion "site.toml"
         working-directory: loconotion
       - name: List files in the repository
-        run: ls ${GITHUB_WORKSPACE}/dist/output
+        run: ls -R
